@@ -1,1 +1,17 @@
-
+body{
+    background-color: rgb(149, 165, 220);
+}
+.container{
+    background-color: rgb(133, 170, 201);
+    display: grid;
+    align-items: center;
+   box-shadow: 2px 2px 5px black;
+   width: 700px;
+   padding: 10px;
+   margin: 50px;
+}
+img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+}
