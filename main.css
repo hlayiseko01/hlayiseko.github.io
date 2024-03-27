@@ -1,17 +1,50 @@
-body{
+body {
     background-color: rgb(149, 165, 220);
+    margin: 0; /* Add this line to remove default body margin */
 }
-.container{
+
+.container {
     background-color: rgb(133, 170, 201);
     display: grid;
     align-items: center;
-   box-shadow: 2px 2px 5px black;
-   width: auto;
-   padding: 10px;
-   margin: 50px;
+    box-shadow: 2px 2px 5px black;
+    width: auto;
+    padding: 10px;
+    margin: 50px auto; /* Center the container horizontally */
+    max-width: 80%; /* Add max-width to prevent container from becoming too wide */
+    grid-template-columns: 1fr 1fr; /* Divide container into two columns */
 }
-img{
+
+.text {
+    padding-right: 20px; /* Add space between text and image */
+}
+
+img {
     border-radius: 50%;
     display: block;
-    margin-left: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
 }
+
+.container img {
+    object-fit: cover;
+}
+
+.social {
+    text-align: center; /* Center align social icons */
+}
+
+/* Add media query to adjust container width and margin for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto; /* Adjust margin for smaller screens */
+        max-width: 90%; /* Adjust max-width for smaller screens */
+        grid-template-columns: 1fr; /* Switch to single column layout for smaller screens */
+    }
+
+    .text {
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+}
+
