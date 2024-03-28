@@ -2,6 +2,7 @@ body {
     background-color: rgb(149, 165, 220);
     margin: 0; /* Add this line to remove default body margin */
 }
+
 h3{
     font-family: "Arial", sans-serif;
     font-size: 25px;
@@ -46,7 +47,8 @@ img {
 
 }
 .social .fa {
-    font-size: 25px; 
+    font-size: 25px;
+    padding: 10px; 
 }
 
 
