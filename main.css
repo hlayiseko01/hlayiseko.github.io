@@ -82,4 +82,50 @@ button:hover{
         padding-right: 0; /* Remove padding for smaller screens */
     }
 }
+.programming-icon {
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0);
+    padding: 20px;
+    border-radius: 10px;
+    
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.programming-icon h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #191a24;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Add space between icons */
+    flex-wrap: wrap; /* Allows icons to wrap to the next line if needed */
+}
+
+.icon-container img {
+    width: 100px; /* Adjust the size of icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon-container img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+@media (max-width: 600px) {
+    .icon-container img {
+        width: 80px; /* Smaller icons on mobile */
+    }
+    
+    .programming-icon h2 {
+        font-size: 20px;
+    }
+}
+
 
